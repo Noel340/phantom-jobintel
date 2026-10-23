@@ -1,0 +1,276 @@
+{
+  "best_model": "Linear SVM (Calibrated)",
+  "selection_criterion": "Highest Fraud F1-Score (harmonic mean of Fraud Recall and Fraud Precision on minority fraudulent class) combined with calibrated probability support.",
+  "models": {
+    "Logistic Regression": {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.9779,
+      "macro_precision": 0.8528,
+      "macro_recall": 0.95,
+      "macro_f1": 0.8947,
+      "weighted_f1": 0.9792,
+      "fraud_precision": 0.7098,
+      "fraud_recall": 0.9191,
+      "fraud_f1": 0.801,
+      "legit_precision": 0.9958,
+      "legit_recall": 0.9809,
+      "legit_f1": 0.9883,
+      "confusion_matrix": {
+        "tn": 3338,
+        "fp": 65,
+        "fn": 14,
+        "tp": 159,
+        "matrix": [
+          [
+            3338,
+            65
+          ],
+          [
+            14,
+            159
+          ]
+        ]
+      },
+      "roc_auc": 0.9918,
+      "pr_auc": 0.9354,
+      "classification_report": {
+        "0": {
+          "precision": 0.9958233890214797,
+          "recall": 0.9808992065824272,
+          "f1-score": 0.9883049592894152,
+          "support": 3403.0
+        },
+        "1": {
+          "precision": 0.7098214285714286,
+          "recall": 0.9190751445086706,
+          "f1-score": 0.801007556675063,
+          "support": 173.0
+        },
+        "accuracy": 0.9779082774049217,
+        "macro avg": {
+          "precision": 0.8528224087964542,
+          "recall": 0.9499871755455489,
+          "f1-score": 0.894656257982239,
+          "support": 3576.0
+        },
+        "weighted avg": {
+          "precision": 0.9819871644247631,
+          "recall": 0.9779082774049217,
+          "f1-score": 0.9792438712994033,
+          "support": 3576.0
+        }
+      }
+    },
+    "Multinomial Naive Bayes": {
+      "model_name": "Multinomial Naive Bayes",
+      "accuracy": 0.9793,
+      "macro_precision": 0.9133,
+      "macro_recall": 0.8492,
+      "macro_f1": 0.8782,
+      "weighted_f1": 0.9784,
+      "fraud_precision": 0.8414,
+      "fraud_recall": 0.7052,
+      "fraud_f1": 0.7673,
+      "legit_precision": 0.9851,
+      "legit_recall": 0.9932,
+      "legit_f1": 0.9892,
+      "confusion_matrix": {
+        "tn": 3380,
+        "fp": 23,
+        "fn": 51,
+        "tp": 122,
+        "matrix": [
+          [
+            3380,
+            23
+          ],
+          [
+            51,
+            122
+          ]
+        ]
+      },
+      "roc_auc": 0.9797,
+      "pr_auc": 0.8428,
+      "classification_report": {
+        "0": {
+          "precision": 0.9851355290002914,
+          "recall": 0.9932412577137819,
+          "f1-score": 0.9891717881182324,
+          "support": 3403.0
+        },
+        "1": {
+          "precision": 0.8413793103448276,
+          "recall": 0.7052023121387283,
+          "f1-score": 0.7672955974842768,
+          "support": 173.0
+        },
+        "accuracy": 0.9793064876957495,
+        "macro avg": {
+          "precision": 0.9132574196725596,
+          "recall": 0.8492217849262551,
+          "f1-score": 0.8782336928012546,
+          "support": 3576.0
+        },
+        "weighted avg": {
+          "precision": 0.9781808797196999,
+          "recall": 0.9793064876957495,
+          "f1-score": 0.9784378448912541,
+          "support": 3576.0
+        }
+      }
+    },
+    "Linear SVM (Calibrated)": {
+      "model_name": "Linear SVM (Calibrated)",
+      "accuracy": 0.9905,
+      "macro_precision": 0.982,
+      "macro_recall": 0.9127,
+      "macro_f1": 0.9444,
+      "weighted_f1": 0.9901,
+      "fraud_precision": 0.9728,
+      "fraud_recall": 0.8266,
+      "fraud_f1": 0.8938,
+      "legit_precision": 0.9913,
+      "legit_recall": 0.9988,
+      "legit_f1": 0.995,
+      "confusion_matrix": {
+        "tn": 3399,
+        "fp": 4,
+        "fn": 30,
+        "tp": 143,
+        "matrix": [
+          [
+            3399,
+            4
+          ],
+          [
+            30,
+            143
+          ]
+        ]
+      },
+      "roc_auc": 0.9924,
+      "pr_auc": 0.9593,
+      "classification_report": {
+        "0": {
+          "precision": 0.9912510936132983,
+          "recall": 0.9988245665589186,
+          "f1-score": 0.995023419203747,
+          "support": 3403.0
+        },
+        "1": {
+          "precision": 0.9727891156462585,
+          "recall": 0.8265895953757225,
+          "f1-score": 0.89375,
+          "support": 173.0
+        },
+        "accuracy": 0.9904921700223713,
+        "macro avg": {
+          "precision": 0.9820201046297784,
+          "recall": 0.9127070809673206,
+          "f1-score": 0.9443867096018735,
+          "support": 3576.0
+        },
+        "weighted avg": {
+          "precision": 0.9903579386389422,
+          "recall": 0.9904921700223713,
+          "f1-score": 0.9901240060263846,
+          "support": 3576.0
+        }
+      }
+    }
+  },
+  "dataset_summary": {
+    "total_rows": 17880,
+    "total_columns": 18,
+    "columns": [
+      "job_id",
+      "title",
+      "location",
+      "department",
+      "salary_range",
+      "company_profile",
+      "description",
+      "requirements",
+      "benefits",
+      "telecommuting",
+      "has_company_logo",
+      "has_questions",
+      "employment_type",
+      "required_experience",
+      "required_education",
+      "industry",
+      "function",
+      "fraudulent"
+    ],
+    "class_distribution": {
+      "legitimate_0": 17014,
+      "fraudulent_1": 866,
+      "legitimate_pct": 95.16,
+      "fraudulent_pct": 4.84,
+      "imbalance_ratio": 19.65
+    },
+    "exact_duplicates": 0,
+    "content_duplicates": 281,
+    "missing_counts": {
+      "job_id": 0,
+      "title": 0,
+      "location": 346,
+      "department": 11547,
+      "salary_range": 15012,
+      "company_profile": 3308,
+      "description": 1,
+      "requirements": 2696,
+      "benefits": 7212,
+      "telecommuting": 0,
+      "has_company_logo": 0,
+      "has_questions": 0,
+      "employment_type": 3471,
+      "required_experience": 7050,
+      "required_education": 8105,
+      "industry": 4903,
+      "function": 6455,
+      "fraudulent": 0
+    },
+    "missing_percentages": {
+      "job_id": 0.0,
+      "title": 0.0,
+      "location": 1.94,
+      "department": 64.58,
+      "salary_range": 83.96,
+      "company_profile": 18.5,
+      "description": 0.01,
+      "requirements": 15.08,
+      "benefits": 40.34,
+      "telecommuting": 0.0,
+      "has_company_logo": 0.0,
+      "has_questions": 0.0,
+      "employment_type": 19.41,
+      "required_experience": 39.43,
+      "required_education": 45.33,
+      "industry": 27.42,
+      "function": 36.1,
+      "fraudulent": 0.0
+    },
+    "dtypes": {
+      "job_id": "int64",
+      "title": "str",
+      "location": "str",
+      "department": "str",
+      "salary_range": "str",
+      "company_profile": "str",
+      "description": "str",
+      "requirements": "str",
+      "benefits": "str",
+      "telecommuting": "int64",
+      "has_company_logo": "int64",
+      "has_questions": "int64",
+      "employment_type": "str",
+      "required_experience": "str",
+      "required_education": "str",
+      "industry": "str",
+      "function": "str",
+      "fraudulent": "int64"
+    }
+  }
+}
