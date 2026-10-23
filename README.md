@@ -221,10 +221,11 @@ python -m streamlit run app.py
 - **Course:** B.Tech Computer Science and Engineering
 - **System Name:** PHANTOM // JOBINTEL
 - **Frameworks:** Python 3.11, Scikit-Learn, Pandas, NumPy, Streamlit, BeautifulSoup4, Joblib, Pytest
-- ## Dataset
+  
+ ## Dataset
 
 The dataset is too large to host on GitHub. Download it here:
-[Fake Job Postings dataset (Kaggle)]([https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction?utm_source=chatgpt.com))
+[Fake Job Postings dataset (Kaggle)](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
 
 After downloading, place the file in the `data/` folder:
 
